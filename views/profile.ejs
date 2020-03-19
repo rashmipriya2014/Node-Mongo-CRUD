@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <script src="/script.js"></script>
+</head>
+<body>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link active" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/all_users">All Guest</a>
+    </li>    
+</ul>
+<h2 class="page_heading"><%= profileData.name %> Profile</h2> 
+<div class="container-fluid">
+  <div class="row">  
+    <div class ="col-md-6">
+      <form action="/edit_profile" method="post" class="profile_wrap">                       
+        <div class="  ">
+          <div class="row">
+            <div class="col-md-4 profile_title">Name:</div>
+            <div class="col-md-8 profile_val"><%= profileData.name %></div>
+            <div class="col-md-8 input_profile_val">
+              <input type="text" value="<%= profileData.name %>"name="name" class="form-control mb-4 inp_profile" placeholder="Name">
+              <input type="hidden" value="<%= profileData._id %>" name="id" class="form-control mb-4 inp_profile" placeholder="id">
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4 profile_title">Email:</div>
+              <div class="col-md-8 profile_val"><%= profileData.email %></div>
+              <div class="col-md-8 input_profile_val">
+                <input type="text" value="<%= profileData.email %>"name="email" class="form-control mb-4 inp_profile" placeholder="Email">
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 profile_title">Address:</div>
+            <div class="col-md-8 profile_val"><%= profileData.address %></div>
+            <div class="col-md-8 input_profile_val">
+              <input type="text" value="<%= profileData.address %>"name="address" class="form-control mb-4 inp_profile" placeholder="Address">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 profile_title">Mobile:</div>
+            <div class="col-md-8 profile_val"><%= profileData.mobile %></div>
+            <div class="col-md-8 input_profile_val">
+              <input type="text" value="<%= profileData.mobile %>"name="mobile" class="form-control mb-4 inp_profile" placeholder="Mobile">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 profile_title">Feedback:</div>
+            <div class="col-md-8 profile_val"><%= profileData.feedback %></div>
+            <div class="col-md-8 input_profile_val">
+              <textarea  type="text" rows="10" name="feedback" class="form-control mb-4 inp_profile" placeholder="Feedback"><%= profileData.feedback %></textarea>
+            </div>
+          </div>
+          <button type="button" class="button_sub" onclick="editProfile()">Edit Profile</button>
+          <button type="submit" class="button_sub prof_btn_save">Save</button>
+        </div>        
+      </form>       
+    </div>
+    <div class ="col-md-6">
+      <div class="profileimg_wrap">
+        <img src="/images/default_profile.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer ftr_wrp">
+  <div class="text_title"> 
+      Paramount
+      <p class="greet_sub">May all who enter as a guest, leave as a friend...  </p>
+  </div>
+</div>
+</body>
+</html>
