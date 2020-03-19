@@ -1,5 +1,4 @@
 # Node-Mongo-CRUD
-
 A basic CRUD functionality in Node js and Mongodb
 
 ## Requirement
@@ -22,5 +21,5 @@ npm start
 
 ```
 
-![alt text](https://prnt.sc/riti18)
+
 
