@@ -22,6 +22,10 @@ npm start
 
 ```
 
+### Configure database
+eg https://prnt.sc/rme3fs 
+
+
 ## Run on browser
 http://localhost:3000/
 
