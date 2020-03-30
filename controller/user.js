@@ -1,15 +1,5 @@
 var User = require('../model/user');
 
-//  render login page 
-exports.login = (req,res)=>{
-    res.render('login');
-};
-
-// render register page
-exports.register = (req,res)=>{
-    res.render('register');
-};
-
 // home page
 exports.home = (req,res)=>{
     res.render('home');
