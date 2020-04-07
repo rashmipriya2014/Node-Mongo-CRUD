@@ -29,7 +29,7 @@ eg https://prnt.sc/rme3fs
 ## Run on browser
 http://localhost:3000/
 
-## Some Screensort
+## Some Screenshot
 
 ![image](https://user-images.githubusercontent.com/36446909/77043065-c82ae080-69e2-11ea-88bc-ba93e89bc42f.png)
 
